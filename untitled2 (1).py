@@ -146,36 +146,22 @@ result.columns = ['Pc', 'AvgBilling']
 result
 
 """
-
-
-
 1.   **High Volume Hospitals:-**
 
 
 *   These hospitals have moderate and consistent billing averages, suggesting standardized procedures and potentially higher operational efficiency
 *   Their patient load indicates strong demand and possibly broader service offerings
 
-
 2.   **Low-Volume Hospitals**
-
 
 *   These hospitals display high variability in billing amounts, often much higher than high-volume hospitals.
 * This may indicate:
-
 
     1.   Specialized treatments
 
     2. Limited service offerings
 
-
-
-
 *   Due to limited patient count, these values should be interpreted cautiously.
-
-
-
-
-
 
 
 """
@@ -228,8 +214,6 @@ Each condition accounts for approximately:
           Patient counts per condition are nearly equal
 
           Total billing per condition is also nearly equal
-
-
 """
 
 Hcost_and_Lcost=df.groupby('Hospital')['Billing Amount'].sum().round(1)
@@ -265,8 +249,6 @@ plt.show()
 
 *  High-cost hospitals (e.g., Hernandez-Morton, Walker-Garcia, Ruiz-Anthony, George-Gonzalez, Rocha-Carter) each contribute around **20**% of **total high-cost billing**.
 
-
-
         Billing amounts among the top hospitals are almost identical.
 
         No hospital stands out as a major billing driver among the high-cost group.
@@ -279,24 +261,15 @@ plt.show()
          The lowest contributor (Perez Hoover, Moore and …) accounts for ~5.7%
 
           The remaining hospitals fall between 14–29%
-
-
-
   
      Some hospitals perform a significantly higher volume of low-cost procedures.
 
      Others contribute very little, indicating:
 
-
-
-
-
      Fewer low-cost cases
 
       *   Limited operations
       *   Specialized roles
-
-
 
 """
 
